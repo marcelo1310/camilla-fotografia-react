@@ -1,0 +1,1 @@
+export { Carrossel } from "./CarrosselDepoimentos";

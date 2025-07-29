@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+
+:root {
+  --branco: #fefefe;
+  --bege: #cac1b2;
+  --chumbo: #3f382e;
+  --vinho: #3e1407;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--bege);
+  font-family: "Segoe UI", sans-serif;
+}
+
+.container {
+  @apply flex flex-col w-[calc(100%-16px)] mx-2 max-w-[1200px] items-center justify-center z-10
+}

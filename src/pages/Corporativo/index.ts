@@ -1,0 +1,1 @@
+export { Corporativo } from "./Corporativo";
