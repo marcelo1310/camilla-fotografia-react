@@ -45,7 +45,7 @@ export const Header = () => {
   ];
 
   return (
-    <header className={`fixed top-0 left-0 w-full h-14 flex items-center justify-between bg-[var(--bege)] lg:justify-around z-20 xl:h-16 transition-colors duration-300
+    <header className={`fixed top-0 left-0 w-full h-14 flex items-center justify-between bg-[var(--bege)] lg:justify-around z-50 xl:h-16 transition-colors duration-300
      ${
         scrolled ? 'bg-[var(--branco)] text-[var(--vinho)] shadow-sm' : 'bg-transparent text-[var(--branco)]'
       }
