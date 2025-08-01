@@ -70,12 +70,12 @@ export function Carrossel() {
   );
 
   return (
-    <div ref={emblaRef} className="overflow-hidden my-10 flex flex-col justify-center w-full z-20 text-[var(--branco)] hfull">
+    <div ref={emblaRef} className="overflow-hidden my-10 flex flex-col justify-center w-full z-20 text-[var(--branco)] h-full">
         <div className="flex xl:w-[95%]">
           {slides.map((slide) => (
             <div
               key={slide.id}
-              className="px-1 md:px-3 lg:px-5 flex-[0_0_80%] md:flex-[0_0_50%] lg:flex-[0_0_33.3333%]"
+              className="px-2 md:px-3 lg:px-4 flex-[0_0_70%] sm:flex-[0_0_60%] md:flex-[0_0_50%] lg:flex-[0_0_33.3333%]"
             >
               <div className="relative">
                 <img

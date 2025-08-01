@@ -19,7 +19,7 @@ export const Section = ({
 
   const estilosCor = {
     transparente: "",
-    cor: "bg-[var(--vinho)]",
+    cor: "bg-[var(--chumbo)]",
   };
 
 const marginTop = {

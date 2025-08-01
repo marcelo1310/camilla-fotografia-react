@@ -19,6 +19,23 @@ export const Header = () => {
     }
   }, [])
 
+  useEffect(() => {
+    function bloquearToque(e: TouchEvent) {
+      e.preventDefault();
+    }
+
+    if (menuAberto) {
+      // bloqueia o toque no fundo
+      document.addEventListener("touchmove", bloquearToque, { passive: false });
+    }
+
+    return () => {
+      // sempre remove o listener ao desmontar ou fechar menu
+      document.removeEventListener("touchmove", bloquearToque);
+    };
+  }, [menuAberto]);
+
+
   const links = [
     { nome: "INÍCIO", href: "/" },
     { nome: "SOBRE", href: "#sobre" },
@@ -28,12 +45,12 @@ export const Header = () => {
   ];
 
   return (
-    <header className={`fixed top-0 left-0 w-full h-14 flex items-center justify-between text-[var(--branco)] bg-[var(--bege)] lg:justify-around z-50 xl:h-16 transition-colors duration-300
+    <header className={`fixed top-0 left-0 w-full h-14 flex items-center justify-between bg-[var(--bege)] lg:justify-around z-20 xl:h-16 transition-colors duration-300
      ${
-        scrolled ? 'bg-[var(--bege)] shadow-sm' : 'bg-transparent'
+        scrolled ? 'bg-[var(--branco)] text-[var(--vinho)] shadow-sm' : 'bg-transparent text-[var(--branco)]'
       }
     `}>
-      <div className="ml-4 z-20 text-2xl font-bold">
+      <div className="ml-4 text-2xl font-bold">
         <a href="/">CF</a>
       </div>
       <div className="flex items-center gap-20 ">
@@ -47,7 +64,7 @@ export const Header = () => {
           {/*Menu Desktop*/}
           <ul className="hidden gap-8 lg:flex z-10 text-xl font-bold justify-between">
             {links.map((link) => (
-              <li className="hover:text-[var(--vinho)]" 
+              <li className="hover:text-[var(--vinho)]  hover:border-b-1" 
               key={link.nome}>
                 <a href={link.href} aria-label="abre menu mobile">
                   {link.nome}
@@ -63,7 +80,7 @@ export const Header = () => {
           </button>
           {/*Menu Mobile*/}
           <div
-            className={`fixed text-[var(--branco)] top-0 left-0 w-full z-10 h-screen flex flex-col items-center backdrop-blur-sm duration-1000 ease-in-out
+            className={`absolute text-[var(--branco)] top-0 left-0 w-full z-50 h-screen flex flex-col items-center backdrop-blur-md duration-1000 ease-in-out
             ${menuAberto ? "opacity-100 " : "opacity-0 pointer-events-none"}
             lg:hidden`}
           >
