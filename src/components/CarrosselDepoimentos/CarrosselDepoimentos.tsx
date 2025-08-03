@@ -3,6 +3,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import { useCallback } from "react";
 import img from "@/assets/img/Camilla.jpg";
+import { GrNext, GrPrevious } from "react-icons/gr";
 
 const slides = [
   {
@@ -84,20 +85,18 @@ export function Carrossel() {
         ))}
       </div>
 
-      <div className="justify-center gap-20 mt-10 hidden lg:flex">
-        <button
-          onClick={scrollPrev}
-          className="px-4 py-2 bg-[var(--vinho)] rounded transition"
-        >
-          Anterior
-        </button>
-        <button
-          onClick={scrollNext}
-          className="px-4 py-2 bg-[var(--vinho)] rounded  transition"
-        >
-          Próximo
-        </button>
-      </div>
+       <button
+                onClick={scrollPrev}
+                className="absolute left-1  px-2 py-4 bg-black/70 rounded transition"
+              >
+                <GrPrevious size={25}/>
+              </button>
+              <button
+                onClick={scrollNext}
+                className="absolute right-1 bg-black/70 px-2 py-4 rounded  transition"
+              >
+                 <GrNext size={25}/>
+              </button>
     </div>
   );
 }

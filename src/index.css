@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-
 :root {
   --branco: #fefefe;
   --bege: #cac1b2;
@@ -21,5 +20,9 @@ body {
 }
 
 .container {
-  @apply flex flex-col w-[calc(100%-16px)] mx-2 max-w-[1200px] items-center justify-center z-10
+  @apply flex flex-col w-[calc(100%-16px)] mx-2 max-w-[1200px] items-center justify-center z-10;
+}
+
+.shadowFull {
+  @apply shadow-[0_0_15px_5px_rgba(0,0,0,0.1)];
 }

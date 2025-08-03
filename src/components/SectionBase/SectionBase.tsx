@@ -11,7 +11,7 @@ export const Section = ({
   id,
   bgColor = "transparente",
   bgImage,
-  mt = "sim"
+  mt = "sim",
 }: SectionProps) => {
     
   const estiloBase =
@@ -19,13 +19,14 @@ export const Section = ({
 
   const estilosCor = {
     transparente: "",
-    cor: "bg-[var(--chumbo)]",
+    cor: "bg-[var(--bege)]/20",
   };
 
 const marginTop = {
   sim: "mt-20",
   nao: "mt-0"
 }
+
 
   const classFinal = `${marginTop[mt]} ${estiloBase} ${estilosCor[bgColor]}`;
 

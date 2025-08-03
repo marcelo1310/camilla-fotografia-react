@@ -1,59 +1,71 @@
 // components/Carrossel.tsx
 import useEmblaCarousel from "embla-carousel-react";
 import { useCallback } from "react";
-import img from "../../assets/img/Camilla.jpg";
+import { GrPrevious, GrNext } from "react-icons/gr";
+import img1 from "@/assets/galeria/1.jpg";
+import img2 from "@assets/galeria/2.jpg";
+import img3 from "@assets/galeria/3.jpg";
+import img4 from "@assets/galeria/4.jpg";
+import img5 from "@assets/galeria/5.jpg";
+import img6 from "@assets/galeria/6.jpg";
+import img7 from "@assets/galeria/7.jpg";
 
-
-
-const slides = [
+export const slides = [
   {
     id: 1,
-    titulo: "Casamento",
-    imagem: img,
-    texto: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste natus, nemo repellat molestias soluta delectus",
-    href: "/fotos-casamento",
-  },
-  {
-    id: 2,
+    img: img1,
     titulo: "Pré-Wedding",
-    imagem: img,
-    texto: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste natus, nemo repellat molestias soluta delectus",
+    texto:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit delectus, quam accusamus cupiditate rerum sit repudiandae labore voluptates nesciunt deserunt.",
     href: "/ensaio-pre-wedding",
   },
   {
+    id: 2,
+    img: img2,
+    titulo: "Casamento",
+    texto:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit delectus, quam accusamus cupiditate rerum sit repudiandae labore voluptates nesciunt deserunt.",
+    href: "/fotos-casamento",
+  },
+  {
     id: 3,
+    img: img3,
     titulo: "Corporativo",
-    imagem: img,
-    texto: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste natus, nemo repellat molestias soluta delectus",
-    href: "/ensaio-corporativo",
+    texto:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit delectus, quam accusamus cupiditate rerum sit repudiandae labore voluptates nesciunt deserunt.",
+    href: "ensaio-corporativo",
   },
   {
     id: 4,
-    titulo: "Estúdio",
-    imagem: img,
-    texto: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste natus, nemo repellat molestias soluta delectus",
-    href: "/ensaio-estudio",
+    img: img4,
+    titulo: "Eventos",
+    texto:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit delectus, quam accusamus cupiditate rerum sit repudiandae labore voluptates nesciunt deserunt.",
+    href: "",
   },
   {
     id: 5,
-    titulo: "Ediçoes",
-    imagem: img,
-    texto: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste natus, nemo repellat molestias soluta delectus",
-    href: "/edicoes",
+    img: img5,
+    titulo: "Estúdio",
+    texto:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit delectus, quam accusamus cupiditate rerum sit repudiandae labore voluptates nesciunt deserunt.",
+    href: "",
   },
   {
     id: 6,
-    titulo: "Eventos",
-    imagem: img,
-    texto: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste natus, nemo repellat molestias soluta delectus",
-    href: "/fotos-de-eventos",
+    img: img6,
+    titulo: "Gestantes",
+    texto:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit delectus, quam accusamus cupiditate rerum sit repudiandae labore voluptates nesciunt deserunt.",
+    href: "",
   },
   {
     id: 7,
-    titulo: "Rostos e Retratos",
-    imagem: img,
-    texto: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste natus, nemo repellat molestias soluta delectus",
-    href: "/rostos-e-retratos",
+    img: img7,
+    titulo: "Outros Serviços",
+    texto:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit delectus, quam accusamus cupiditate rerum sit repudiandae labore voluptates nesciunt deserunt.",
+    href: "",
   },
 ];
 
@@ -70,47 +82,49 @@ export function Carrossel() {
   );
 
   return (
-    <div ref={emblaRef} className="overflow-hidden my-10 flex flex-col justify-center w-full z-20 text-[var(--branco)] h-full">
-        <div className="flex xl:w-[95%]">
-          {slides.map((slide) => (
-            <div
-              key={slide.id}
-              className="px-2 md:px-3 lg:px-4 flex-[0_0_70%] sm:flex-[0_0_60%] md:flex-[0_0_50%] lg:flex-[0_0_33.3333%]"
-            >
-              <div className="relative">
-                <img
-                  src={slide.imagem}
-                  alt={slide.titulo}
-                  className="w-full object-cover rounded"
-                />
-                <div className="absolute inset-0 flex flex-col items-center gap-6 justify-center bg-black/10 text-white">
-                  <h3 className="text-4xl font-bold">{slide.titulo}</h3>
-                  <p className="w-[80%]">{slide.texto}</p>
-                  <a href={slide.href} className="mt-2 px-4 py-1 bg-white text-black rounded">
-                    Saiba mais
-                  </a>
-                </div>
+    <div
+      ref={emblaRef}
+      className="overflow-hidden flex flex-col justify-center w-full h-full z-20 text-[var(--branco)] "
+    >
+      <div className="flex w-full h-full">
+        {slides.map((slide) => (
+          <div
+            key={slide.id}
+            className="px-1 md:px-2 lg:px-3 flex-[0_0_80%] md:flex-[0_0_50%] lg:flex-[0_0_40%] xl:flex-[0_0_30%]"
+          >
+            <div className="relative shadow-xl">
+              <img
+                src={slide.img}
+                alt={slide.titulo}
+                className="object-cover rounded"
+              />
+              <div className="absolute inset-0 flex flex-col items-center text-center gap-2 justify-end bg-black/10 text-[var(--branco)]">
+                <h3 className="text-3xl font-bold">{slide.titulo}</h3>
+                
+                <a
+                  href={slide.href}
+                  className="m-3 px-4 py-1 bg-[var(--branco)] text-black rounded"
+                >
+                  Saiba mais
+                </a>
               </div>
             </div>
-          ))}
-        </div>
-   
-
-      <div className="justify-center gap-20 mt-5 hidden lg:flex">
+          </div>
+        ))}
+      </div>
+    
         <button
           onClick={scrollPrev}
-          className="px-4 py-2 bg-[var(--vinho)] rounded transition"
+          className="absolute left-1  px-2 py-4 bg-black/70 rounded transition"
         >
-          Anterior
+          <GrPrevious size={25}/>
         </button>
         <button
           onClick={scrollNext}
-          className="px-4 py-2 bg-[var(--vinho)] rounded  transition"
+          className="absolute right-1 bg-black/70 px-2 py-4 rounded  transition"
         >
-          Próximo
+           <GrNext size={25}/>
         </button>
       </div>
-    </div>
   );
 }
-

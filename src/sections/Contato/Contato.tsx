@@ -7,7 +7,9 @@ export const Contato = () => {
   return (
     <Section id="contato">
       <div className="flex flex-col items-center w-full gap-8 pb-20">
-        <Titulo2>Contato</Titulo2>
+        <div className="py-8">
+          <Titulo2>Contato</Titulo2>
+        </div>
         <Paragrafo>
           Não perca a oportunidade de registar momentos incíveis.
         </Paragrafo>
