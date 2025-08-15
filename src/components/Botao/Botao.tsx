@@ -24,8 +24,8 @@ export const Botao = ({ children, tipo="chamada", cor="escuro", onClick }: Botao
 const estiloFinal = `${estiloBase} ${estilosTipo[tipo]} ${estilosCor[cor]}`;
 
   return (
-    <button className={estiloFinal} onClick={onClick}>
+    <a className={estiloFinal} onClick={onClick} href="https://wa.me/5521971639183" target="blanck">
       {children}
-    </button>
+    </a>
   );
 };
