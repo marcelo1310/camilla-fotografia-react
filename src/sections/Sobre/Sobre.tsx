@@ -8,9 +8,6 @@ export const Sobre = () => {
   return (
     <Section id="sobre">
       <div className="container">
-    
-          
- 
 
         <div className="lg:flex flex-row lg:gap-10">
           <div className="flex flex-col gap-5 lg:w-1/2 xl:text-xl">

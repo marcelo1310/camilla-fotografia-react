@@ -6,20 +6,31 @@ import { Paragrafo } from "@/components/Paragrafo";
 
 export const History = () => {
   return (
-    <Section bgImage={img}>
+    <Section bgImage={img} mt="nao">
       <Filtro />
-      <div className="container min-h-80 text-[var(--branco)]">
+      <div className="container min-h-80 text-[var(--branco)] pb-4">
         <div className="py-10">
-          <Titulo2 cor="claro">Conheça Fulaninha</Titulo2>
+          <Titulo2 cor="claro">Conheça a Paula</Titulo2>
         </div>
-        <Paragrafo>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, hic
-          autem? Debitis ut aliquid nostrum velit ipsa ad amet, illum nulla ab
-          quasi eveniet adipisci. Vel facere perferendis veritatis consequatur.
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, hic
-          autem? Debitis ut aliquid nostrum velit ipsa ad amet, illum nulla ab
-          quasi eveniet adipisci. Vel facere perferendis veritatis consequatur.
-        </Paragrafo>
+        <div className="flex flex-col gap-3">
+          <Paragrafo>
+            Ela é estrategista digital e designer. O trabalho dela une estética,
+            estratégia e verdade. Então, as fotos tinham que refletir exatamente
+            isso.
+          </Paragrafo>
+          <Paragrafo>
+            Nada de imagens que não conversam com quem ela é. Tudo foi pensado
+            para mostar a Paula, com autenticidade e intenção.
+          </Paragrafo>
+          <Paragrafo>
+            A estética foi intensionada para transmitir clareza, sofisticação,
+            conexão e autenticidade.
+          </Paragrafo>
+          <Paragrafo>
+            Resultado? Uma imagem profissional que representa quem ela é e quem
+            ela quer atrair.
+          </Paragrafo>
+        </div>
       </div>
     </Section>
   );

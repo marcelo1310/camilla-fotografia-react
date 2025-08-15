@@ -54,12 +54,6 @@ export const Header = () => {
         <a href="/">CF</a>
       </div>
       <div className="flex items-center gap-20 ">
-        <div className=" hidden z-10 gap-15 lg:flex">
-          <Instagram size={25} />
-          <Facebook size={25} />
-          <WhatsApp size={25} />
-        </div>
-
         <nav className="flex w-full">
           {/*Menu Desktop*/}
           <ul className="hidden gap-8 lg:flex z-10 text-xl font-bold justify-between">
