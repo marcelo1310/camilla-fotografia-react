@@ -8,7 +8,7 @@ type SobreServicesProps = {
 };
 export const SobreServices = ({ titulo, texto }: SobreServicesProps) => {
   return (
-    <Section id="sobre" bgColor="cor" mt="nao">
+    <Section id="sobre" bgColor="vinho" mt="nao">
       <div className="container min-h-80 text-[var(--branco)] gap-10 mt-65 lg:mt-30 lg:py-20">
         <div className="w-full text-center lg:text-left">
           <Titulo2 cor="claro">{titulo}</Titulo2>

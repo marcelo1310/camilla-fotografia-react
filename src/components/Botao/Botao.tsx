@@ -9,7 +9,7 @@ type BotaoProps = {
 
 export const Botao = ({ children, tipo="chamada", cor="escuro", onClick }: BotaoProps) => {
 
-  const estiloBase = "z-10 px-8 py-2 items-center text-xl rounded-2xl font-bold  md:text-2xl lg:py-3 lg:px-14"
+  const estiloBase = "z-10 px-8 py-2 items-center text-xl rounded-lg font-bold  md:text-2xl lg:py-3 lg:px-14"
 
   const estilosTipo = {
     chamada: "text-[var(--branco)]",

@@ -1,7 +1,7 @@
 type SectionProps = {
   children: React.ReactNode;
   id?: string;
-  bgColor?: "transparente" | "cor";
+  bgColor?: "transparente" | "bege" | "vinho" | "chumbo";
   bgImage?: string;
   mt?: "sim" | "nao"
 };
@@ -19,7 +19,9 @@ export const Section = ({
 
   const estilosCor = {
     transparente: "",
-    cor: "bg-[var(--vinho)]",
+    bege: "bg-[var(--vinho)]",
+    vinho: "bg-[var(--vinho)]",
+    chumbo: "bg-[var(--vinho)]",
   };
 
 const marginTop = {

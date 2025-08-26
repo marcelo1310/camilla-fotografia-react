@@ -36,7 +36,7 @@ export function Galeria({ imagens }: GaleriaProps) {
 
     <div className="container">
       {/* Grade de imagens */}
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-2 mt-2">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-2 my-2">
         {imagens.map((src, index) => (
           <img
             key={index}

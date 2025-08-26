@@ -1,4 +1,4 @@
-import { HeroServices, History } from "@/services-sections";
+import { HeroServices, History, Pacotes } from "@/services-sections";
 import { Galeria } from "@/services-sections/GaleriaServices";
 import { SobreServices } from "@/services-sections/SobreServices";
 import img1 from "@/assets/galeria/1.jpg";
@@ -28,6 +28,7 @@ export const Corporativo = () => {
       <Galeria
         imagens={[img1, img2, img3, img4, img5, img6, img7, img8, img9]}
       />
+      <Pacotes />
     </div>
   );
 };
