@@ -92,39 +92,41 @@ export function Carrossel() {
             key={slide.id}
             className="px-1 md:px-2 lg:px-3 flex-[0_0_80%] md:flex-[0_0_50%] lg:flex-[0_0_40%] xl:flex-[0_0_30%]"
           >
-            <div className="relative shadow-xl">
-              <img
-                src={slide.img}
-                alt={slide.titulo}
-                className="object-cover rounded"
-              />
-              <div className="absolute inset-0 flex flex-col items-center text-center gap-2 justify-end bg-black/10 text-[var(--branco)]">
-                <h3 className="text-3xl font-bold">{slide.titulo}</h3>
-                
-                <a
-                  href={slide.href}
-                  className="m-3 px-4 py-1 bg-[var(--branco)] text-black rounded"
-                >
-                  Saiba mais
-                </a>
+            <a href={slide.href}>
+              <div className="relative shadow-xl">
+                <img
+                  src={slide.img}
+                  alt={slide.titulo}
+                  className="object-cover rounded"
+                />
+                <div className="absolute inset-0 flex flex-col items-center text-center gap-2 justify-end bg-black/10 text-[var(--branco)]">
+                  <h3 className="text-3xl font-bold">{slide.titulo}</h3>
+
+                  <a
+                    href={slide.href}
+                    className="m-3 px-4 py-1 bg-[var(--branco)] text-black rounded"
+                  >
+                    Saiba mais
+                  </a>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
         ))}
       </div>
-    
-        <button
-          onClick={scrollPrev}
-          className="absolute left-1  px-2 py-4 bg-black/70 rounded transition"
-        >
-          <GrPrevious size={25}/>
-        </button>
-        <button
-          onClick={scrollNext}
-          className="absolute right-1 bg-black/70 px-2 py-4 rounded  transition"
-        >
-           <GrNext size={25}/>
-        </button>
-      </div>
+
+      <button
+        onClick={scrollPrev}
+        className="absolute left-1  px-2 py-4 bg-black/70 rounded transition"
+      >
+        <GrPrevious size={25} />
+      </button>
+      <button
+        onClick={scrollNext}
+        className="absolute right-1 bg-black/70 px-2 py-4 rounded  transition"
+      >
+        <GrNext size={25} />
+      </button>
+    </div>
   );
 }

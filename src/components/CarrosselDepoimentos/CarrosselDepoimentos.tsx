@@ -60,7 +60,7 @@ export function Carrossel() {
   return (
     <div
       ref={emblaRef}
-      className="overflow-hidden flex flex-col justify-center w-full lg:w-[800px] h-[500px] lg:h-[600px] z-20 text-[var(--branco)]"
+      className="overflow-hidden flex flex-col justify-center w-full h-[500px] lg:w-[800px] z-20 text-[var(--branco)]"
     >
       <div className="flex">
         {slides.map((slide) => (
@@ -69,7 +69,7 @@ export function Carrossel() {
             className="px-2 flex-[0_0_100%]"
           >
             <div className="flex flex-col items-center gap-3 text-white w-full h-full">
-              <div className="flex w-full mt-20 items-center justify-center">
+              <div className="flex w-full mt-10 items-center justify-center">
                 <img
                   className="rounded-full w-25 h-25"
                   src={slide.imagem}
@@ -87,15 +87,15 @@ export function Carrossel() {
 
        <button
                 onClick={scrollPrev}
-                className="absolute left-1  px-2 py-4 bg-black/70 rounded transition"
+                className="absolute left-0 px-2 py-4 rounded transition"
               >
-                <GrPrevious size={25}/>
+                <GrPrevious size={30}/>
               </button>
               <button
                 onClick={scrollNext}
-                className="absolute right-1 bg-black/70 px-2 py-4 rounded  transition"
+                className="absolute right-0 px-2 py-4 rounded  transition"
               >
-                 <GrNext size={25}/>
+                 <GrNext size={30}/>
               </button>
     </div>
   );

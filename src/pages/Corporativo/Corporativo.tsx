@@ -10,6 +10,7 @@ import img6 from "@assets/galeria/6.jpg";
 import img7 from "@assets/galeria/7.jpg";
 import img8 from "@assets/galeria/8.jpg";
 import img9 from "@assets/galeria/9.jpg";
+import { Contato } from "@/sections/Contato";
 
 export const Corporativo = () => {
 
@@ -29,6 +30,7 @@ export const Corporativo = () => {
         imagens={[img1, img2, img3, img4, img5, img6, img7, img8, img9]}
       />
       <Pacotes />
+      <Contato />
     </div>
   );
 };

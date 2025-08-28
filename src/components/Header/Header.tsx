@@ -1,23 +1,24 @@
 import { useState, useEffect } from "react";
 import { IoClose, IoMenu } from "react-icons/io5";
+import { FaCameraRetro } from "react-icons/fa6";
 import { Instagram, Facebook, WhatsApp } from "@/components/Links/Links";
 
 export const Header = () => {
   const [menuAberto, setMenuAberto] = useState(false);
   const toggleMenu = () => setMenuAberto(!menuAberto);
-  const [scrolled, setScrolled] = useState(false)
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     const onScroll = () => {
-      setScrolled(window.scrollY > 50)
-    }
+      setScrolled(window.scrollY > 50);
+    };
 
-    window.addEventListener('scroll', onScroll)
+    window.addEventListener("scroll", onScroll);
 
     return () => {
-      window.removeEventListener('scroll', onScroll)
-    }
-  }, [])
+      window.removeEventListener("scroll", onScroll);
+    };
+  }, []);
 
   useEffect(() => {
     function bloquearToque(e: TouchEvent) {
@@ -35,9 +36,8 @@ export const Header = () => {
     };
   }, [menuAberto]);
 
-
   const links = [
-    { nome: "INÍCIO", href: "/" },
+    { nome: "TOPO", href: "#hero" },
     { nome: "SOBRE", href: "#sobre" },
     { nome: "SERVIÇOS", href: "#servicos" },
     { nome: "DEPOIMENTOS", href: "#depoimentos" },
@@ -45,27 +45,48 @@ export const Header = () => {
   ];
 
   return (
-    <header className={`fixed top-0 left-0 w-full h-14 flex items-center justify-between bg-[var(--bege)] lg:justify-around z-50 xl:h-16 transition-colors duration-300
+    <header
+      className={`fixed top-0 left-0 w-full h-14 flex items-center justify-between bg-[var(--bege)] lg:justify-around z-50 xl:h-16 transition-colors duration-300
      ${
-        scrolled ? 'bg-[var(--branco)] text-[var(--vinho)] shadow-sm' : 'bg-transparent text-[var(--branco)]'
-      }
-    `}>
-      <div className="ml-4 text-2xl font-bold">
-        <a href="/">CF</a>
+       scrolled
+         ? "bg-[var(--branco)] text-[var(--vinho)] shadow-sm"
+         : "bg-transparent text-[var(--branco)]"
+     }
+    `}
+    >
+      <div className="text-[1.2rem] ml-4 font-bold">
+        <a className="flex items-center gap-1" href="/">
+          <FaCameraRetro size={25} /> Home
+        </a>
       </div>
       <div className="flex items-center gap-20 ">
         <nav className="flex w-full">
           {/*Menu Desktop*/}
-          <ul className="hidden gap-8 lg:flex z-10 text-xl font-bold justify-between">
+          <ul className="hidden gap-8 lg:flex z-10 text-[1.2rem] font-bold justify-between">
             {links.map((link) => (
-              <li className="hover:text-[var(--vinho)]  hover:border-b-1" 
-              key={link.nome}>
-                <a href={link.href} aria-label="abre menu mobile">
+              <li key={link.nome}>
+                <a
+                  href={link.href}
+                  aria-label="abre menu mobile"
+                  className={`relative no-underline group ${
+                    scrolled ? "text-[var(--vinho)]" : "text-[var(--branco)]"
+                  }`}
+                >
                   {link.nome}
+                  <span
+                    className={`absolute left-0 bottom-0 h-[2px] w-full scale-x-0 origin-center transition-transform duration-300 group-hover:scale-x-100 
+                    ${
+                      scrolled
+                        ? "bg-[var(--vinho)] text-[var(--vinho)] shadow-sm"
+                        : "bg-[var(--branco)] text-[var(--branco)]"
+                    }
+                    `}
+                  ></span>
                 </a>
               </li>
             ))}
           </ul>
+
           <button
             className=" fixed top-2.5 right-3 z-20 lg:hidden"
             onClick={toggleMenu}
