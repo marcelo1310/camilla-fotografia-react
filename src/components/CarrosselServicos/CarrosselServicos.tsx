@@ -33,7 +33,7 @@ export const slides = [
     titulo: "Corporativo",
     texto:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit delectus, quam accusamus cupiditate rerum sit repudiandae labore voluptates nesciunt deserunt.",
-    href: "ensaio-corporativo",
+    href: "/ensaio-corporativo",
   },
   {
     id: 4,
@@ -41,7 +41,7 @@ export const slides = [
     titulo: "Eventos",
     texto:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit delectus, quam accusamus cupiditate rerum sit repudiandae labore voluptates nesciunt deserunt.",
-    href: "",
+    href: "/fotos-eventos",
   },
   {
     id: 5,
@@ -49,7 +49,7 @@ export const slides = [
     titulo: "Estúdio",
     texto:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit delectus, quam accusamus cupiditate rerum sit repudiandae labore voluptates nesciunt deserunt.",
-    href: "",
+    href: "/fotos-estudio",
   },
   {
     id: 6,
@@ -57,15 +57,15 @@ export const slides = [
     titulo: "Gestantes",
     texto:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit delectus, quam accusamus cupiditate rerum sit repudiandae labore voluptates nesciunt deserunt.",
-    href: "",
+    href: "/ensaio-gestante",
   },
   {
     id: 7,
     img: img7,
-    titulo: "Outros Serviços",
+    titulo: "Família",
     texto:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit delectus, quam accusamus cupiditate rerum sit repudiandae labore voluptates nesciunt deserunt.",
-    href: "",
+    href: "ensaio-familia",
   },
 ];
 

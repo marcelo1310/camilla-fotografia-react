@@ -1,6 +1,6 @@
 import { Section } from "@/components/SectionBase";
 import { Titulo2 } from "@/components/Titulo2";
-import img from "@/assets/galeria/4.jpg";
+import img from "@/assets/img/Camilla.jpg";
 import { Pacote } from "@/components/CardsPacotes";
 
 // Array com todos os pacotes
@@ -51,7 +51,7 @@ const pacotes = [
 
 export const Pacotes = () => {
   return (
-    <Section id="pacotes" bgColor="vinho" mt="nao">
+    <Section id="pacotes" bgColor="bege" mt="nao">
       <div className="w-full text-center py-8">
         <Titulo2 cor="claro">Pacotes</Titulo2>
       </div>

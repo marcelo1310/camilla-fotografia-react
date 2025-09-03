@@ -32,7 +32,7 @@ export const Hero = () => {
               {...fadeInFromTop(0.6)}
               className="relative inline-flex items-center justify-center"
             >
-              <Botao tipo="chamada" cor="claro">
+              <Botao tipo="chamada" cor="bege">
                 Agende Agora
               </Botao>
             </motion.div>

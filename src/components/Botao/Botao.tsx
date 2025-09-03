@@ -3,11 +3,11 @@
 type BotaoProps = {
   children: React.ReactNode;
   tipo?: "chamada" | "secundario";  
-  cor?: "claro" | "escuro";          
+  cor?: "transparente" | "bege" | "vinho";          
   onClick?: () => void;
 };
 
-export const Botao = ({ children, tipo="chamada", cor="escuro", onClick }: BotaoProps) => {
+export const Botao = ({ children, tipo="chamada", cor="bege", onClick }: BotaoProps) => {
 
   const estiloBase = "z-10 px-8 py-2 items-center text-xl rounded-lg font-bold  md:text-2xl lg:py-3 lg:px-14"
 
@@ -17,8 +17,9 @@ export const Botao = ({ children, tipo="chamada", cor="escuro", onClick }: Botao
   };
 
   const estilosCor = {
-    claro: "bg-[var(--bege)]",
-    escuro: "bg-[var(--vinho)]",
+    bege: "bg-[var(--bege)]",
+    vinho: "bg-[var(--vinho)]",
+    transparente: "border-2"
   };
 
 const estiloFinal = `${estiloBase} ${estilosTipo[tipo]} ${estilosCor[cor]}`;
