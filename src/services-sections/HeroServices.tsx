@@ -24,8 +24,8 @@ export const HeroServices = ({
   return (
     <Section id="hero" bgImage={img} mt="nao">
       <Filtro />
-      <div className="relative flex flex-col w-[calc(100%-16px)] mx-2 max-w-[1200px] items-center mt-20 z-10 h-120 lg:h-150 lg:flex-row xl:h-150">
-        <div className="flex flex-col items-center gap-4 md:gap-8 lg:w-[55%] lg:items-start">
+      <div className="relative flex flex-col mt-20 mx-2 max-w-[1200px] items-center z-10 h-120 md:h-130 lg:h-150 lg:flex-row xl:h-150">
+        <div className="flex flex-col items-center mt-6 lg:mt-30 gap-6 w-[85%] md:gap-8 md:w-[80%] lg:w-[65%] lg:items-start">
           <motion.div {...fadeInFromTop(0.2)}>
             <Titulo1>{titulo}</Titulo1>
           </motion.div>
@@ -46,8 +46,8 @@ export const HeroServices = ({
             </Botao>
           </motion.div>
         </div>
-        <div className="absolute flex top-68 z-20 w-90 lg:w-120 bg-[var(--branco)] lg:top-30 lg:right-0">
-          <img className="p-2" src={foto} alt="" />
+        <div className="absolute flex top-75 z-20 w-70 md:w-80 lg:w-[35%] bg-[var(--branco)] lg:top-70 lg:right-0">
+          <img className="p-1" src={foto} alt="" />
         </div>
       </div>
     </Section>

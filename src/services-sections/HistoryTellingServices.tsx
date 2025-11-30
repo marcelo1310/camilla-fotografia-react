@@ -12,7 +12,7 @@ export const History = () => {
         <div className="py-10">
           <Titulo2 cor="claro">Conheça a Paula</Titulo2>
         </div>
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-3 md:w-[80%]">
           <Paragrafo>
             Ela é estrategista digital e designer. O trabalho dela une estética,
             estratégia e verdade. Então, as fotos tinham que refletir exatamente

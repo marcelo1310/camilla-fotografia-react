@@ -25,7 +25,7 @@ export const Section = ({
   };
 
 const marginTop = {
-  sim: "mt-20",
+  sim: "mt-30",
   nao: "mt-0"
 }
 

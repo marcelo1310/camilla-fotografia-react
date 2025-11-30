@@ -1,10 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500;600&family=Poppins:wght@300;400;500;600&display=swap");
 @import "tailwindcss";
+
 
 :root {
   --branco: #fefefe;
   --bege: #cac1b2;
   --chumbo: #3f382e;
   --vinho: #3e1407;
+  --fonte-titulo: "Bodoni Moda", serif;
+  --fonte-texto: "Poppins", sans-serif;
 }
 
 html {
@@ -16,7 +20,7 @@ body {
   flex-direction: column;
   width: 100%;
   background-color: var(--bege);
-  font-family: "Segoe UI", sans-serif;
+  font-family: var(--fonte-texto)
 }
 
 .container {

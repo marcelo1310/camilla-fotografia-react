@@ -37,16 +37,16 @@ export const Header = () => {
   }, [menuAberto]);
 
   const links = [
-    { nome: "TOPO", href: "#hero" },
-    { nome: "SOBRE", href: "#sobre" },
-    { nome: "SERVIÇOS", href: "#servicos" },
-    { nome: "DEPOIMENTOS", href: "#depoimentos" },
-    { nome: "CONTATO", href: "#contato" },
+    { nome: "Topo", href: "#hero" },
+    { nome: "Sobre", href: "#sobre" },
+    { nome: "Serviços", href: "#servicos" },
+    { nome: "Depoimentos", href: "#depoimentos" },
+    { nome: "Contato", href: "#contato" },
   ];
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full h-14 flex items-center justify-between bg-[var(--bege)] lg:justify-around z-50 xl:h-16 transition-colors duration-300
+      className={`fixed top-0 left-0 w-full h-12 flex items-center justify-between bg-[var(--bege)] lg:justify-around z-50 transition-colors duration-300
      ${
        scrolled
          ? "bg-[var(--branco)] text-[var(--vinho)] shadow-sm"
@@ -54,7 +54,7 @@ export const Header = () => {
      }
     `}
     >
-      <div className="text-[1.2rem] ml-4 font-bold">
+      <div className=" ml-4 font-[var(--fonte-titulo)]">
         <a className="flex items-center gap-1" href="/">
           <FaCameraRetro size={25} /> Home
         </a>
@@ -62,7 +62,7 @@ export const Header = () => {
       <div className="flex items-center gap-20 ">
         <nav className="flex w-full">
           {/*Menu Desktop*/}
-          <ul className="hidden gap-8 lg:flex z-10 text-[1.2rem] font-bold justify-between">
+          <ul className="hidden gap-8 lg:flex z-10 font-[var(--fonte-titulo)] justify-between">
             {links.map((link) => (
               <li key={link.nome}>
                 <a

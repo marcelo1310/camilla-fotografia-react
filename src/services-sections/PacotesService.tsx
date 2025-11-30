@@ -12,7 +12,6 @@ const pacotes = [
       "15 fotos profissionais entregues tratadas",
       "1 look",
     ],
-    valor: "R$250,00"
   },
   {
     titulo: "PROFISSIONAL",
@@ -21,13 +20,11 @@ const pacotes = [
       "Fotos profissionais ilimitadas e entregues tratadas",
       "Até 2 looks",
     ],
-    valor: "R$380,00"
-  },
+    },
   {
     titulo: "VÍDEO",
     itens: ["1 vídeo na vertical", "Até 1 minuto e meio"],
-    valor: "R$100,00"
-  },
+    },
   {
     titulo: "ESTRATÉGIA",
     img,
@@ -45,7 +42,6 @@ const pacotes = [
         </p>
       </>,
     ],
-    valor: "R$480,00"
   },
 ];
 
@@ -60,7 +56,7 @@ export const Pacotes = () => {
           {/* Coluna com os 3 primeiros pacotes */}
           <div className="flex flex-col gap-4 flex-1 md:w-[50%]">
             {pacotes.slice(0, 3).map((p, index) => (
-              <Pacote key={index} titulo={p.titulo} img={p.img} valor={p.valor}>
+              <Pacote key={index} titulo={p.titulo} img={p.img}>
                 {p.itens.map((item, i) => (
                   <li key={i}>{item}</li>
                 ))}
@@ -71,7 +67,7 @@ export const Pacotes = () => {
           {/* Coluna com o último pacote */}
           <div className="flex md:w-[50%]">
             {pacotes.slice(3, 4).map((p, index) => (
-              <Pacote key={index} titulo={p.titulo} img={p.img} valor={p.valor}>
+              <Pacote key={index} titulo={p.titulo} img={p.img}>
                 {p.itens.map((item, i) => (
                   <li key={i}>{item}</li>
                 ))}

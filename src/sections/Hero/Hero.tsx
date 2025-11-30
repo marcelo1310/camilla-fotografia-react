@@ -16,15 +16,15 @@ export const Hero = () => {
         <>
           <Filtro />
 
-          <div className="container w-full h-100 pt-10 gap-6 z-10 text-[var(--branco)] md:h-150 lg:h-screen">
+          <div className="container w-full h-screen pt-10 gap-6 z-10 text-[var(--branco)] md:h-
+           lg:h-screen">
             <motion.div {...fadeInFromTop(0.2)}>
-              <Titulo1>Camila Fotografia</Titulo1>
+              <Titulo1>Camilla Fotografia</Titulo1>
             </motion.div>
 
             <motion.div {...fadeInFromTop(0.4)} className="text-center w-[85%]">
               <Paragrafo texthero="sim">
-                Fotografo histórias de amor, ensaios e momentos que não voltam.
-                Acredito que a beleza está nos mínimos detalhes.
+                Momentos diferentes, pessoas diferentes, histórias diferentes. A única constante é o cuidado em cada clique.
               </Paragrafo>
             </motion.div>
 

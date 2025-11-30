@@ -8,12 +8,16 @@ type SobreServicesProps = {
 };
 export const SobreServices = ({ titulo, texto }: SobreServicesProps) => {
   return (
-    <Section id="sobre" bgColor="bege" mt="nao">
-      <div className="container min-h-80 text-[var(--branco)] gap-10 mt-65 lg:mt-30 lg:py-20">
-        <div className="w-full text-center lg:text-left">
-          <Titulo2 cor="claro">{titulo}</Titulo2>
+    <Section id="sobre" mt="nao">
+      <div className="flex flex-col items-center w-[calc(100%-16px)] mb-20 mt-55 md:mt-70 lg:mt-40 lg:max-w-[1200px] lg:items-start">
+        <div className="md:w-[80%] lg:w-[60%]">
+          <div className="w-full text-center lg:text-left ">
+            <Titulo2 cor="escuro">{titulo}</Titulo2>
+          </div>
+          <div className="mt-5 text-[var(--vinho)]">
+            <Paragrafo>{texto}</Paragrafo>
+          </div>
         </div>
-        <Paragrafo>{texto}</Paragrafo>
       </div>
     </Section>
   );

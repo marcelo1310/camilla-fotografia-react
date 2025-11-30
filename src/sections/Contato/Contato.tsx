@@ -44,8 +44,8 @@ export const Contato = () => {
     <Section id="contato">
       <div className="container mb-15 gap-10">
         {/* Título */}
-        <div className=" flex flex-col text-center gap-6">
-          <Titulo2>Vamos Conversar?</Titulo2>
+        <div className=" flex flex-col text-center gap-6 mb-20">
+          <Titulo2>Estou aqui para ouvir o que você precisa.</Titulo2>
           <Paragrafo>
             Entre em contato para agendar seu ensaio ou tirar
             dúvidas.

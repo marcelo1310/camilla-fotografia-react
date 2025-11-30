@@ -1,5 +1,4 @@
 import { Section } from "@/components/SectionBase";
-import { Titulo2 } from "@/components/Titulo2";
 
 const cards = [
   {
@@ -28,9 +27,6 @@ const cards = [
 export const Diferencial = () => {
   return (
     <Section id="diferencial" mt="sim">
-      <div className="py-8 lg:pb-0">
-        <Titulo2>Meu diferencial</Titulo2>
-      </div>
       <div className="container">
         <div className="flex flex-col items-center lg:flex-row min-h-[500px] gap-15">
           {cards.map((card) => (

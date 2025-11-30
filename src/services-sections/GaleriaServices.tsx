@@ -37,7 +37,7 @@ export function Galeria({ imagens }: GaleriaProps) {
     <Section mt="nao">
       <div className="container">
         {/* Grade de imagens */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-2 my-2">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 my-2">
           {imagens.length === 0 && <p className="text-[2rem]">Carregando...</p>}
           {imagens.map((src, index) => {
             const webpSrc = src.replace(/\.jpe?g$/i, ".webp");

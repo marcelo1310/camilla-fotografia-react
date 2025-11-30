@@ -5,7 +5,7 @@ type Titulo2Props = {
 
 export const Titulo2 = ({children, cor="escuro"}: Titulo2Props) => {
 
-const estiloBase = "text-3xl font-semibold md:text-4xl lg:text-5xl"
+const estiloBase = "text-3xl font-[var(--fonte-titulo)] md:text-4xl lg:text-5xl"
 
 const estiloCor = {
   claro: "text-[var(--branco)]",
