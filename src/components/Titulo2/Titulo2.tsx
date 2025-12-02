@@ -9,7 +9,7 @@ const estiloBase = "text-3xl font-[var(--fonte-titulo)] md:text-4xl lg:text-5xl"
 
 const estiloCor = {
   claro: "text-[var(--branco)]",
-  escuro: "text-[var(--vinho)]"
+  escuro: "text-[var(--vinho)]/90"
 }
 
 const estiloFinal = `${estiloBase} ${estiloCor[cor]}`

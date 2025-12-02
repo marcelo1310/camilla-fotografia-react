@@ -1,1 +1,0 @@
-export { Carrossel } from "./CarrosselServicos";

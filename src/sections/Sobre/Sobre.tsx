@@ -12,7 +12,7 @@ export const Sobre = () => {
         <div className="lg:flex flex-row lg:gap-10">
           <div className="flex flex-col gap-5 lg:w-1/2 xl:text-xl">
           <Titulo2>Olá, eu sou a Camilla</Titulo2>
-          <div className="w-18 my-5 border-1 border-[var(--vinho)]"></div>
+          <div className="w-18 my-5 border-1 border-[var(--vinho)]/90"></div>
             <Paragrafo>
               Sou fotógrafa profissional com mais de 1 ano de experiência,
               especializada em registrar memórias, e apaixonada por capturar os
@@ -31,7 +31,7 @@ export const Sobre = () => {
               o modelo de site completo de Fotografia para.
             </Paragrafo>
 
-            <div className="flex gap-5 pb-5 text-[var(--vinho)]">
+            <div className="flex gap-5 pb-5 text-[var(--vinho)]/90">
               <Instagram size={35} />
               <Facebook size={35} />
               <WhatsApp size={35} />
@@ -40,7 +40,7 @@ export const Sobre = () => {
 
           <div className="flex justify-center lg:w-1/2">
             <img
-              className=" block h-auto md:w-130"
+              className=" block h-auto md:w-130 rounded"
               src={imgCamilla}
               alt="Foto da fotógrafa"
             />

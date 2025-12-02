@@ -2,8 +2,6 @@ import { Hero } from "@/sections/Hero";
 import { Sobre } from "@/sections/Sobre";
 import { Servicos } from "@/sections/Servicos";
 import { Diferencial } from "@/sections/Diferencial";
-import { Depoimentos } from "@/sections/Depoimentos";
-import { Contato } from "@/sections/Contato";
 
 export const Home = () => {
   return (
@@ -12,8 +10,6 @@ export const Home = () => {
       <Sobre />
       <Servicos />
       <Diferencial />
-      <Depoimentos />
-      <Contato />
     </div>
   );
 };

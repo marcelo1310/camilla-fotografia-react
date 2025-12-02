@@ -16,10 +16,9 @@ export const Hero = () => {
         <>
           <Filtro />
 
-          <div className="container w-full h-screen pt-10 gap-6 z-10 text-[var(--branco)] md:h-
-           lg:h-screen">
+          <div className="container w-full h-screen gap-6 z-10 text-[var(--branco)] lg:h-screen">
             <motion.div {...fadeInFromTop(0.2)}>
-              <Titulo1>Camilla Fotografia</Titulo1>
+              <Titulo1 home="sim">Camilla Fotografia</Titulo1>
             </motion.div>
 
             <motion.div {...fadeInFromTop(0.4)} className="text-center w-[85%]">
@@ -32,7 +31,7 @@ export const Hero = () => {
               {...fadeInFromTop(0.6)}
               className="relative inline-flex items-center justify-center"
             >
-              <Botao tipo="chamada" cor="bege">
+              <Botao tipo="chamada" cor="transparente">
                 Agende Agora
               </Botao>
             </motion.div>

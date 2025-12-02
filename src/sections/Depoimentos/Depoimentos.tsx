@@ -9,8 +9,8 @@ export const Depoimentos = () => {
   return (
     <Section id="depoimentos" bgImage={imgDepoimentos} mt="sim">
     <Filtro/>
-      <div className="container">
-        <div className="py-8 text-center">
+      <div className="z-10 flex flex-col items-center w-full">
+        <div className="py-8 text-center lg:w-[80%]">
           <Titulo2 cor="claro">Como cada história foi enxergada por quem esteve do outro lado da lente.</Titulo2>
         </div>
        <Carrossel/>

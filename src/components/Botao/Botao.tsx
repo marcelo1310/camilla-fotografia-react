@@ -9,7 +9,7 @@ type BotaoProps = {
 
 export const Botao = ({ children, tipo="chamada", cor="bege", onClick }: BotaoProps) => {
 
-  const estiloBase = "z-10 px-8 py-2 items-center rounded-lg font-bold  md:text-xl lg:py-2 lg:px-10"
+  const estiloBase = "z-10 px-8 py-2 items-center rounded  md:text-xl lg:py-2 lg:px-10"
 
   const estilosTipo = {
     chamada: "text-[var(--branco)]",
@@ -19,7 +19,7 @@ export const Botao = ({ children, tipo="chamada", cor="bege", onClick }: BotaoPr
   const estilosCor = {
     bege: "bg-[var(--bege)]",
     vinho: "bg-[var(--vinho)]",
-    transparente: "border-2"
+    transparente: "border-1 hover:border-[var(--branco)] hover:bg-[var(--branco)] hover:text-[var(--chumbo)]",
   };
 
 const estiloFinal = `${estiloBase} ${estilosTipo[tipo]} ${estilosCor[cor]}`;

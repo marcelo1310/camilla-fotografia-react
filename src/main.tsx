@@ -7,6 +7,8 @@ import { Home } from "@/pages/Home";
 import { Corporativo } from "@/pages/Corporativo";
 import { Casamento } from "@/pages/Casamentos";
 import { PreWedding } from "@/pages/Pre-Wedding";
+import { NotFound } from "@/pages/NotFound";
+
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -17,6 +19,12 @@ createRoot(document.getElementById("root")!).render(
           <Route path="ensaio-corporativo" element={<Corporativo />} />
           <Route path="fotos-casamento" element={<Casamento />} />
           <Route path="ensaio-pre-wedding" element={<PreWedding />} />
+          <Route path="fotos-eventos" element={<PreWedding />} />
+          <Route path="estudio" element={<PreWedding />} />
+          <Route path="ensaio-gestante" element={<PreWedding />} />
+          <Route path="ensaio-familia" element={<PreWedding />} />
+          <Route path="elopement" element={<PreWedding />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>

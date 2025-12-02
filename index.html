@@ -1,13 +1,27 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <link rel="shortcut icon" href="Camilla.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="Camilla.jpg" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Camilla Fotografia | Eternizando momentos únicos em fotos autênticas</title>
+    <title>
+      Camilla Fotografia | Eternizando momentos únicos em fotos autênticas
+    </title>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <div id="root">
+      <div id="preloader">
+        <div class="loader"></div>
+        <p>Carregando...</p>
+      </div>
+    </div>
+    <script type="module" src="/src/main.tsx">
+      window.addEventListener("load", () => {
+        const preloader = document.getElementById("preloader");
+        setTimeout(() => {
+           preloader.classList.add("hidden");
+        }, 300);
+      });
+    </script>
   </body>
 </html>
