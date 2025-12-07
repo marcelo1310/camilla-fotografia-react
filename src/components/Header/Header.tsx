@@ -93,6 +93,7 @@ export const Header = () => {
           >
             {menuAberto ? "" : <IoMenu size={35} />}
           </button>
+
           {/*Menu Mobile*/}
           <div
             className={`absolute text-[var(--branco)] top-0 left-0 w-full z-50 h-130 flex flex-col items-center backdrop-blur-md duration-1000 ease-in-out
@@ -111,9 +112,9 @@ export const Header = () => {
               {links.map((link) => (
                 <li
                   key={link.nome}
-                  className="w-full flex p-2 hover:bg-[var(--branco)] hover:text-[var(--vinho)] border-b"
+                  className="w-full flex  hover:bg-[var(--branco)] hover:text-[var(--vinho)] border-b"
                 >
-                  <a href={link.href} onClick={toggleMenu}>
+                  <a className="flex w-full h-[100%] p-2" href={link.href} onClick={toggleMenu}>
                     {link.nome}
                   </a>
                 </li>
