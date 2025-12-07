@@ -5,6 +5,7 @@ import { Contato } from "@/sections/Contato";
 import { Depoimentos } from "@/sections/Depoimentos";
 import { Preloader } from "@/components/Preloader";
 import { useEffect, useState } from "react";
+import { Diferencial } from "@/sections/Diferencial";
 
 export function Layout() {
   const [loading, setLoading] = useState(true);
@@ -25,6 +26,7 @@ export function Layout() {
       >
         <Header />
         <Outlet />
+        <Diferencial />
         <Depoimentos />
         <Contato />
         <Footer />

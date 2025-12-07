@@ -3,7 +3,7 @@ import { Paragrafo } from "../Paragrafo"
 
 export const Footer = () => {
     return (
-        <footer className="flex justify-center w-full h-40 bg-[var(--bege)] text-[var(--branco)]">
+        <footer className="flex justify-center w-full h-40 bg-[var(--bege)]/50 text-[var(--branco)]">
 
             <div className="flex flex-col items-center gap-5 justify-center xl:w-[1200px]">
 

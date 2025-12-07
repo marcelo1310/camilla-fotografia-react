@@ -1,7 +1,6 @@
 import { Hero } from "@/sections/Hero";
 import { Sobre } from "@/sections/Sobre";
 import { Servicos } from "@/sections/Servicos";
-import { Diferencial } from "@/sections/Diferencial";
 
 export const Home = () => {
   return (
@@ -9,7 +8,6 @@ export const Home = () => {
       <Hero />
       <Sobre />
       <Servicos />
-      <Diferencial />
     </div>
   );
 };

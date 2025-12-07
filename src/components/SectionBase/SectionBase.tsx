@@ -19,7 +19,7 @@ export const Section = ({
 
   const estilosCor = {
     transparente: "",
-    bege: "bg-[var(--bege)]",
+    bege: "bg-[var(--bege)]/50",
     vinho: "bg-[var(--vinho)]",
     chumbo: "bg-[var(--chumbo)]",
   };

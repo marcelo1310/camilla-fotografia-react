@@ -2,7 +2,6 @@ import { HeroServices } from "@/services-sections";
 import { SobreServices } from "@/services-sections/SobreServices";
 import { History } from "@/services-sections";
 import { Galeria } from "@/services-sections";
-import { Pacotes } from "@/services-sections";
 import { useEffect, useState } from "react";
 import { pegarFotosEnsaio } from "@/services/imagens";
 
@@ -32,7 +31,6 @@ export const PreWedding = ({ nomeEnsaio }: any) => {
       />
       <History />
       <Galeria imagens={imagens} />
-      <Pacotes />
     </div>
   );
 };

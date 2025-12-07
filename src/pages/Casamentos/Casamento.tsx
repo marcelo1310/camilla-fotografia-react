@@ -1,4 +1,4 @@
-import { HeroServices, History, Pacotes } from "@/services-sections";
+import { HeroServices, History } from "@/services-sections";
 import { Galeria } from "@/services-sections/GaleriaServices";
 import { SobreServices } from "@/services-sections/SobreServices";
 import { useEffect, useState } from "react";
@@ -30,7 +30,6 @@ export const Casamento = ({ nomeEnsaio }: any) => {
       />
       <History />
       <Galeria imagens={imagens} />
-      <Pacotes />
     </div>
   );
 };

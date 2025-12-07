@@ -1,7 +1,6 @@
-import { HeroServices, History, Pacotes } from "@/services-sections";
+import { HeroServices, History } from "@/services-sections";
 import { Galeria } from "@/services-sections/GaleriaServices";
 import { SobreServices } from "@/services-sections/SobreServices";
-import { Contato } from "@/sections/Contato";
 import { useEffect, useState } from "react";
 import { pegarFotosEnsaio } from "@/services/imagens";
 import img from "@/assets/img/5.jpg";
@@ -22,8 +21,8 @@ export const Corporativo = ({nomeEnsaio} : any) => {
     <div className="flex flex-col bg-[var(--branco)]">
       <HeroServices
         img={img}
-        titulo="Ensaio Corporativo"
-        paragrafo="Pra quem quer transmitir seriedade, profissionalismo e autenticidade. Mostre ao mundo a melhor versão de si mesmo."
+        titulo="Pra quem quer transmitir seriedade, profissionalismo e autenticidade."
+        paragrafo="Ensaio Corporativo"
         textobtn="Agendar Agora"
       />
       <SobreServices
@@ -34,8 +33,6 @@ export const Corporativo = ({nomeEnsaio} : any) => {
       <Galeria
         imagens={imagens}
       />
-      <Pacotes />
-      <Contato />
     </div>
   );
 };

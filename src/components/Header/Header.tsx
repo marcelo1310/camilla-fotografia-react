@@ -95,11 +95,11 @@ export const Header = () => {
           </button>
           {/*Menu Mobile*/}
           <div
-            className={`absolute text-[var(--branco)] top-0 left-0 w-full z-50 h-screen flex flex-col items-center backdrop-blur-md duration-1000 ease-in-out
+            className={`absolute text-[var(--branco)] top-0 left-0 w-full z-50 h-130 flex flex-col items-center backdrop-blur-md duration-1000 ease-in-out
             ${menuAberto ? "opacity-100 " : "opacity-0 pointer-events-none"}
             lg:hidden`}
           >
-            <div className="absolute inset-0 bg-black/70 z-10"></div>
+            <div className="absolute inset-0 bg-[var(--bege)]/80 z-10"></div>
             <button
               className="fixed z-60 top-2.5 right-3 lg:hidden"
               onClick={toggleMenu}
@@ -111,7 +111,7 @@ export const Header = () => {
               {links.map((link) => (
                 <li
                   key={link.nome}
-                  className="w-full block py-2 md:py-4 hover:bg-[var(--bege)] hover:text-[var(--vinho)] "
+                  className="w-full flex p-2 hover:bg-[var(--branco)] hover:text-[var(--vinho)] border-b"
                 >
                   <a href={link.href} onClick={toggleMenu}>
                     {link.nome}
