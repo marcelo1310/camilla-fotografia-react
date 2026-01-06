@@ -1,0 +1,1 @@
+export { BotaoFlutuante } from './BotaoFlutuante';

@@ -23,7 +23,7 @@ export default function InputTelefone({ value, name, onChange }: { value: string
         value={value}
         onChange={handleTelefoneChange}
         placeholder="(99) 99999-9999"
-        className="w-full p-3 border rounded-lg focus:outline-none focus:ring-1 focus:ring-[var(--vinho)]"
+        className="w-full p-3 bg-[var(--branco)] rounded-lg focus:outline-none focus:ring-1 focus:ring-[var(--vinho)]"
         required
       />
     </div>

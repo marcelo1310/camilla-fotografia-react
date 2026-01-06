@@ -1,11 +1,11 @@
 import { Outlet } from "react-router-dom";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { Contato } from "@/sections/Contato";
-import { Depoimentos } from "@/sections/Depoimentos";
+//import { Contato } from "@/sections/Contato";
 import { Preloader } from "@/components/Preloader";
 import { useEffect, useState } from "react";
-import { Diferencial } from "@/sections/Diferencial";
+import { BotaoFlutuante } from "@/components/BotaoFlutuante";
+
 
 export function Layout() {
   const [loading, setLoading] = useState(true);
@@ -22,14 +22,12 @@ export function Layout() {
       <div
         className={`${
           loading ? "opacity-0" : "opacity-100"
-        } transition-opacity duration-700`}
+        } transition-opacity duration-700 h-[100%]`}
       >
         <Header />
         <Outlet />
-        <Diferencial />
-        <Depoimentos />
-        <Contato />
         <Footer />
+        <BotaoFlutuante />
       </div>
     </>
   );

@@ -1,5 +1,5 @@
 
-import foto from "@/assets/img/Camilla.jpg";
+//import foto from "@/assets/img/Camilla.jpg";
 import { Section } from "@/components/SectionBase";
 import { motion } from "framer-motion";
 import { Botao } from "@/components/Botao";
@@ -24,8 +24,8 @@ export const HeroServices = ({
   return (
     <Section id="hero" bgImage={img} mt="nao">
       <Filtro />
-      <div className="relative flex flex-col mt-20 mx-2 w-full lg:max-w-[1200px] items-center z-10 h-120 md:h-130 lg:h-150 lg:flex-row xl:h-150">
-        <div className="flex flex-col items-center mt-6 lg:m-5 lg:mt-30 gap-6 w-[85%] md:gap-8 md:w-[80%] lg:w-[60%] lg:items-start">
+      <div className="flex mx-2 w-ful items-center justify-center lg:max-w-[1200px] z-10 h-80 md:h-130 lg:h-150 xl:h-170">
+        <div className="flex flex-col items-center justify-around h-[50%]">
           <motion.div {...fadeInFromTop(0.2)}>
             <Titulo1>{titulo}</Titulo1>
           </motion.div>
@@ -45,11 +45,16 @@ export const HeroServices = ({
               {textobtn}
             </Botao>
           </motion.div>
-        </div>
-        <div className="absolute flex top-75 z-20 w-70 md:w-80 lg:w-[35%] bg-[var(--bege)]/50 lg:top-70 lg:right-2">
-          <img className="shadowFull rounded" src={foto} alt="" />
-        </div>
+        </div>   
       </div>
     </Section>
   );
 };
+
+/* 
+
+<div className="absolute flex top-75 z-20 w-70 md:w-80 lg:w-[35%] bg-[var(--bege)]/50 lg:top-70 lg:right-2">
+          <img className="shadowFull rounded" src={foto} alt="" />
+        </div>
+
+*/

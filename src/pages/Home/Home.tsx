@@ -1,13 +1,15 @@
 import { Hero } from "@/sections/Hero";
 import { Sobre } from "@/sections/Sobre";
-import { Servicos } from "@/sections/Servicos";
+import { Portfolio } from "@/sections/Portfolio";
+import { Depoimentos } from "@/sections/Depoimentos";
 
 export const Home = () => {
   return (
-    <div className="flex flex-col items-center bg-[var(--branco)]">
+    <div className="flex flex-col items-center">
       <Hero />
       <Sobre />
-      <Servicos />
+      <Portfolio />
+      <Depoimentos />
     </div>
   );
 };

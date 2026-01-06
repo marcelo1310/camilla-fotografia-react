@@ -93,7 +93,7 @@ export const Contato = () => {
           <form
             ref={formRef}
             onSubmit={enviarEmail}
-            className="bg-[var(--branco)] shadowFull rounded p-8 space-y-5"
+            className="bg-[var(--bege)]/40 rounded p-8 space-y-5 lg:w-[80%]"
           >
             <Paragrafo>Se preferir, me envie sua ideia por email. Estou animada para conhecer sua história.</Paragrafo>
             <input
@@ -101,7 +101,7 @@ export const Contato = () => {
               name="nome"
               placeholder="Seu nome"
               required
-              className="w-full p-3 border rounded focus:outline-none focus:ring-1 focus:ring-[var(--vinho)]"
+              className="w-full p-3 bg-[var(--branco)] rounded focus:outline-none focus:ring-1 focus:ring-[var(--vinho)]"
             />
              <InputTelefone value={telefone} onChange={setTelefone} name="telefone" />
             <input
@@ -109,14 +109,14 @@ export const Contato = () => {
               name="email"
               placeholder="Seu e-mail"
               required
-              className="w-full p-3 border rounded focus:outline-none focus:ring-1 focus:ring-[var(--vinho)]"
+              className="w-full p-3 bg-[var(--branco)] rounded focus:outline-none focus:ring-1 focus:ring-[var(--vinho)]"
             />
             <textarea
               name="mensagem"
               placeholder="Escreva sua mensagem..."
               required
               rows={5}
-              className="w-full p-3 border rounded focus:outline-none focus:ring-1 focus:ring-[var(--vinho)]"
+              className="w-full p-3 bg-[var(--branco)] rounded focus:outline-none focus:ring-1 focus:ring-[var(--vinho)]"
             ></textarea>
             <button
             type="submit"

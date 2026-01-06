@@ -2,7 +2,7 @@
 
 
 :root {
-  --branco: #fefefe;
+  --branco: #fafafa;
   --bege: #cac1b2;
   --chumbo: #3f382e;
   --vinho: #3e1407;
@@ -11,7 +11,7 @@
 }
 
 .container {
-  @apply flex flex-col w-[calc(100%-16px)] mx-2 max-w-[1200px] items-center justify-center z-10;
+  @apply flex flex-col w-[calc(100%-16px)] mx-2 max-w-[1300px] items-center justify-center z-10;
 }
 
 .shadowFull {
@@ -27,7 +27,9 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  font-family: var(--fonte-texto)
+  height: 100vh;
+  font-family: var(--fonte-texto);
+  background-color: var(--branco);
 }
 
 

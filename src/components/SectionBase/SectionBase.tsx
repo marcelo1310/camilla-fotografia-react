@@ -1,9 +1,9 @@
 type SectionProps = {
   children: React.ReactNode;
   id?: string;
-  bgColor?: "transparente" | "bege" | "vinho" | "chumbo";
+  bgColor?: "transparente" | "bege" | "vinho" | "chumbo" | "branco";
   bgImage?: string;
-  mt?: "sim" | "nao"
+  mt?: "sim" | "nao";
 };
 
 export const Section = ({
@@ -13,22 +13,21 @@ export const Section = ({
   bgImage,
   mt = "sim",
 }: SectionProps) => {
-    
   const estiloBase =
-    "relative flex flex-col w-full items-center justify-center bg-cover bg-center scroll-mt-15";
+    "relative flex flex-col w-full m-h-0 items-center justify-center bg-cover bg-center bg-no-repeat scroll-mt-15";
 
   const estilosCor = {
     transparente: "",
-    bege: "bg-[var(--bege)]/50",
+    branco: "bg-[var(--branco)]",
+    bege: "bg-[var(--bege)]/60",
     vinho: "bg-[var(--vinho)]",
     chumbo: "bg-[var(--chumbo)]",
   };
 
-const marginTop = {
-  sim: "mt-20",
-  nao: "mt-0"
-}
-
+  const marginTop = {
+    sim: "mt-20",
+    nao: "mt-0",
+  };
 
   const classFinal = `${marginTop[mt]} ${estiloBase} ${estilosCor[bgColor]}`;
 
@@ -37,10 +36,10 @@ const marginTop = {
       id={id}
       className={classFinal}
       style={{
-        backgroundImage: bgImage ? `url(${bgImage})` : undefined,
+        backgroundImage: bgImage ? `url(${bgImage})` : "",
       }}
-    >  
-        {children}
+    >
+      {children}
     </section>
   );
 };

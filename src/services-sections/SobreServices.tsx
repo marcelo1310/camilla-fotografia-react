@@ -9,12 +9,12 @@ type SobreServicesProps = {
 export const SobreServices = ({ titulo, texto }: SobreServicesProps) => {
   return (
     <Section id="sobre" mt="nao">
-      <div className="flex flex-col items-center w-[calc(100%-16px)] mb-20 mt-55 md:mt-70 lg:mt-40 lg:max-w-[1200px] lg:items-start">
-        <div className="md:w-[80%] lg:w-[60%]">
+      <div className="flex items-center justify-center w-[calc(100%-16px)] mb-20 mt-20 lg:max-w-[1200px]">
+        <div className="flex flex-col items-center justify-center md:w-[80%] lg:w-[60%]">
           <div className="w-full text-center lg:text-left ">
             <Titulo2 cor="escuro">{titulo}</Titulo2>
           </div>
-          <div className="mt-5 text-[var(--vinho)]">
+          <div className="text-justify mt-5 text-[var(--vinho)]">
             <Paragrafo>{texto}</Paragrafo>
           </div>
         </div>
