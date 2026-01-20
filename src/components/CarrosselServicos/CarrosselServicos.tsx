@@ -134,8 +134,8 @@ export function Carrossel() {
             key={slide.id}
             className={`h-auto flex justify-center px-1 md:px-1.5 lg:px-2 ${
               slide.tipo === "vertical"
-                ? "flex-[0_0_50.8%] md:flex-[0_0_40%] lg:flex-[0_0_26%]"
-                : "flex-[0_0_112.5%] md:flex-[0_0_85%] lg:flex-[0_0_62%]"
+                ? "flex-[0_0_50.8%] md:flex-[0_0_40%] lg:flex-[0_0_30%] xl:flex-[0_0_26%]"
+                : "flex-[0_0_112.5%] md:flex-[0_0_85%] lg:flex-[0_0_65%] xl:flex-[0_0_56%]"
             }`}
           >
               <img src={slide.img} alt={slide.alt} className="object-fit"/>

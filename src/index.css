@@ -3,7 +3,7 @@
 
 :root {
   --branco: #fafafa;
-  --bege: #cac1b2;
+  --bege: #cac1b1;
   --chumbo: #3f382e;
   --vinho: #3e1407;
   --fonte-titulo: "Bodoni Moda", serif;
@@ -11,7 +11,7 @@
 }
 
 .container {
-  @apply flex flex-col w-[calc(100%-16px)] mx-2 max-w-[1300px] items-center justify-center z-10;
+  @apply flex flex-col w-[calc(100%-16px)] mx-2 max-w-[1400px] items-center justify-center z-10;
 }
 
 .shadowFull {

@@ -1,6 +1,5 @@
 import { HeroServices, History } from "@/services-sections";
 import { Galeria } from "@/services-sections/GaleriaServices";
-import { SobreServices } from "@/services-sections/SobreServices";
 //import { useEffect, useState } from "react";
 //import { pegarFotosEnsaio } from "@/services/imagens";
 import img from "@/assets/img/img-home.jpg";
@@ -46,18 +45,16 @@ export const Casamento = ({ nomeEnsaio }: any) => {
     carregarFotos();
   }, [nomeEnsaio]);
 
+
+  
   */
 
   return (
     <main className="flex flex-col bg-[var(--branco)]">
       <HeroServices
         img={img}
-        titulo="Fotografia de Casamento"
-        paragrafo=""
-        textobtn="Agendar Agora"
-      />
-      <SobreServices
-        titulo="Quero Registrar Seu Grande dia"
+        titulo="Casamento"
+        subtitulo="Quero Registrar Seu Grande dia"
         texto="Cada casamento é único, e acredito que suas memórias merecem ser registradas com atenção, sensibilidade e profissionalismo. Ao me escolher, você tem a garantia de um olhar atento, imagens de alta qualidade e dedicação total para transformar seu dia em lembranças eternas."
       />
       <History />

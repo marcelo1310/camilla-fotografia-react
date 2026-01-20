@@ -8,6 +8,9 @@ import { Corporativo } from "@/pages/Corporativo";
 import { Casamento } from "@/pages/Casamentos";
 import { PreWedding } from "@/pages/Pre-Wedding";
 import { NotFound } from "@/pages/NotFound";
+import { Sobre } from "./pages/Sobre";
+import { PaginaDepoimentos } from "./pages/PaginaDepoimentos";
+import { Contato } from "./pages/Contato";
 
 
 createRoot(document.getElementById("root")!).render(
@@ -16,6 +19,9 @@ createRoot(document.getElementById("root")!).render(
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
+          <Route path="sobre" element={<Sobre />} />
+          <Route path="contato" element={<Contato />} />
+          <Route path="depoimentos" element={<PaginaDepoimentos />} />
           <Route path="ensaio-corporativo" element={<Corporativo />} />
           <Route path="fotos-casamento" element={<Casamento />} />
           <Route path="ensaio-pre-wedding" element={<PreWedding />} />

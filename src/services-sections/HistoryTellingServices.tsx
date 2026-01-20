@@ -5,7 +5,7 @@ import { Paragrafo } from "@/components/Paragrafo";
 export const History = () => {
   return (
     <Section mt="nao">
-      <div className="container bg-[var(--bege)]/40 min-h-80 text-[var(--vinho)] p-4">
+      <div className="container bg-[var(--bege)]/40 min-h-80 text-[var(--vinho)] p-4 mt-55">
         <div className="pb-10">
           <Titulo2 cor="escuro">Maria e José</Titulo2>
         </div>

@@ -1,51 +1,42 @@
-
 //import foto from "@/assets/img/Camilla.jpg";
-import { Section } from "@/components/SectionBase";
-import { motion } from "framer-motion";
-import { Botao } from "@/components/Botao";
-import { fadeInFromTop } from "@/utils/AnimacaoInicio";
-import { Titulo1 } from "@/components/Titulo1";
 import { Paragrafo } from "@/components/Paragrafo";
-import { Filtro } from "@/components/Filtro";
+import { Section } from "@/components/SectionBase";
+import { Titulo1 } from "@/components/Titulo1";
+import { Titulo2 } from "@/components/Titulo2";
 
 type HeroServiceProps = {
-  titulo: String;
-  paragrafo: String;
-  textobtn: string;
+  titulo: string;
+  subtitulo: string;
+  texto: string;
   img: string;
 };
 
-export const HeroServices = ({
-  titulo,
-  paragrafo,
-  textobtn,
-  img,
-}: HeroServiceProps) => {
+export const HeroServices = ({ titulo, subtitulo, texto, img }: HeroServiceProps) => {
   return (
-    <Section id="hero" bgImage={img} mt="nao">
-      <Filtro />
-      <div className="flex mx-2 w-ful items-center justify-center lg:max-w-[1200px] z-10 h-80 md:h-130 lg:h-150 xl:h-170">
-        <div className="flex flex-col items-center justify-around h-[50%]">
-          <motion.div {...fadeInFromTop(0.2)}>
-            <Titulo1>{titulo}</Titulo1>
-          </motion.div>
+    <Section id="hero" mt="nao">
+      <div
+        className=" relative flex flex-col items-center w-full lg:max-w-[1400px] z-10 h-80 md:h-130 lg:h-150 xl:h-170"
+        style={{
+          backgroundImage: `url(${img})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="flex mt-20 md:mt-30 lg:mt-40">
+          <Titulo1 children={titulo} />
+        </div>
 
-          <motion.div
-            {...fadeInFromTop(0.4)}
-            className="text-center lg:text-left w-[85%] text-[var(--branco)]"
-          >
-            <Paragrafo texthero="sim">{paragrafo}</Paragrafo>
-          </motion.div>
+        <div className="absolute flex flex-col items-center justify-center text-center gap-5 top-50 md:top-95 lg:top-110 xl:top-130 p-5 bg-[#e7e3d9] w-[85%] h-65 md:h-70 lg:h-80 shadow-lg">
 
-          <motion.div
-            {...fadeInFromTop(0.6)}
-            className="relative inline-flex items-center justify-center"
-          >
-            <Botao tipo="chamada" cor="transparente">
-              {textobtn}
-            </Botao>
-          </motion.div>
-        </div>   
+          <Titulo2 
+          children={subtitulo}
+          />
+
+          <Paragrafo
+          children={texto}
+          />
+
+        </div>
       </div>
     </Section>
   );

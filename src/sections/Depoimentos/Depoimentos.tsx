@@ -68,7 +68,7 @@ export const Depoimentos = () => {
             Depoimentos
           </h2>
           <p className=" text-lg font-light">
-            O que nossos clientes dizem
+            Como cada história foi enxergada por quem esteve do outro lado da lente.
           </p>
         </div>
 
@@ -83,6 +83,7 @@ export const Depoimentos = () => {
                   src={testimonials[currentIndex].image}
                   alt={testimonials[currentIndex].name}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  loading="lazy"
                 />
               </div>
             </div>
