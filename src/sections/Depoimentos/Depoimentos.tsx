@@ -22,7 +22,7 @@ export const Depoimentos = () => {
       name: "Roberto Mendes",
       role: "Empresário",
       text: "Profissionalismo excepcional. As fotos corporativas ficaram impecáveis, transmitindo exatamente a imagem que queríamos para nossa marca.",
-      image: "https://picsum.photos/seed/person2/200/200"
+      image: img1
     },
     {
       id: 3,
@@ -74,29 +74,29 @@ export const Depoimentos = () => {
 
         {/* Exibição Principal do Depoimento */}
         <div className="relative">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-15 items-center mb-10">
+          <div className="flex flex-col md:flex-row p-5 gap-8 md:gap-15 items-center justify-center mb-10">
             {/* Lado da Imagem */}
-            <div className="relative group">
+            <div className="relative group md:w-[50%]">
               <div className="absolute -inset-0 bg-gradient-to-br from-zinc-800/20 to-zinc-900/20  blur-2xl group-hover:blur-3xl transition-all duration-500 "></div>
-              <div className="relative flex items-center justify-center aspect-square overflow-hidden w-full">
+              <div className="relative flex items-center justify-center overflow-hidden w-full">
                 <img
                   src={testimonials[currentIndex].image}
                   alt={testimonials[currentIndex].name}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 aspect-auto"
                   loading="lazy"
                 />
               </div>
             </div>
 
             {/* Conteúdo Slide */}
-            <div className="space-y-5">
+            <div className="space-y-5 md:w-[60%]">
               
-              <p className="text-xl md:text-2xl lg:text-3xl font-light leading-relaxed tracking-wide">
+              <p className=" font-light leading-relaxed tracking-wide">
                 {testimonials[currentIndex].text}
               </p>
 
               <div className="pt-6 border-t border-[var(--chumbo)]">
-                <h4 className="text-2xl font-light tracking-wide mb-2">
+                <h4 className="text-xl font-light tracking-wide mb-2">
                   {testimonials[currentIndex].name}
                 </h4>
                 <p className="text-zinc-500 tracking-wider uppercase text-sm">

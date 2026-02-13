@@ -48,8 +48,10 @@ export const Header = () => {
       className={`w-full h-20 md:h-22 lg:h-30 flex items-center justify-between lg:justify-around z-50 transition-colors duration-300`}
     >
       <div className=" ml-4 font-[var(--fonte-titulo)]">
-        <a className="flex items-center text-3xl gap-1" href="/">
+        <a className="flex items-center text-2xl gap-1" href="/">
+        <h1>
           Camilla Fotografia
+        </h1>
         </a>
       </div>
       <div className="flex items-center gap-20 ">
