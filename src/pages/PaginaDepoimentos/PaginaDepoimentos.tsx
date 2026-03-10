@@ -1,7 +1,5 @@
 import { Section } from "@/components/SectionBase";
 import img from "@/assets/img/img-depoimentos.jpg";
-import { Paragrafo } from "@/components/Paragrafo";
-import { Titulo2 } from "@/components/Titulo2";
 import { useState } from "react";
 
 export const PaginaDepoimentos = () => {
@@ -47,35 +45,20 @@ export const PaginaDepoimentos = () => {
 
   return (
     <>
-      <Section id="hero" mt="nao" bgImage={img}>
-        <div className="container h-70 md:h-100 lg:h-130 xl:h-150">
+      <Section id="hero" mt="nao" bgColor="bege">
+        <div className="container border-b-2 border-[#ede5dc] h-70">
           <div className="flex flex-col items-center gap-10 max-w-[80%] text-[var(--chumbo)]">
-            <Paragrafo texthero="sim">
-              "Desde o momento em que Camilla chegou ao local, ficou claro que
-              ela estava no auge de sua performance."
-            </Paragrafo>
-            <Paragrafo texthero="sim">- Cliente Satisfeita</Paragrafo>
+            <h2 className="text-3xl">Depoimentos</h2>
+            <p>
+              Como cada história foi enxergada por quem esteve do outro lado da
+              lente.
+            </p>
           </div>
         </div>
       </Section>
 
-      <Section mt="sim">
-        <div className="container gap-10 p-20 md:w-[80%] bg-[var(--bege)] text-[var(--chumbo)]">
-          <Titulo2 cor="escuro">Histórias que falam por si mesmas</Titulo2>
-          <Paragrafo>
-            A parte mais gratificante de ser fotógrafa não é apenas tirar fotos,
-            mas sim conectar-se com as pessoas e suas histórias. Cada casal e
-            família traz algo único, e sou profundamente grata por ser convidada
-            a registrar esses momentos. De casamentos intimistas no quintal de
-            casa a grandes celebrações, essas experiências compartilhadas
-            refletem o riso, a alegria e o amor que não podem ser expressos
-            apenas em palavras.
-          </Paragrafo>
-        </div>
-      </Section>
-
-      <Section mt="sim">
-        <div className="container space-y-20">
+      <Section mt="nao" bgColor="bege">
+        <div className="container space-y-20 py-20">
           {Depoimentos.map((depoimento, index) => (
             <article
               className={`

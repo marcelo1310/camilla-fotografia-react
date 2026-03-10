@@ -4,7 +4,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "@/index.css";
 import { Layout } from "@/layout";
 import { Home } from "@/pages/Home";
-import { Corporativo } from "@/pages/Corporativo";
 import { Casamento } from "@/pages/Casamentos";
 import { PreWedding } from "@/pages/Pre-Wedding";
 import { NotFound } from "@/pages/NotFound";

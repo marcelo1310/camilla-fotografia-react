@@ -51,9 +51,9 @@ export const Portfolio = () => {
       <div className="mb-8">
         <Titulo2>Portfólio</Titulo2>
       </div>
-      <div className=" container min-h-screen">
+      <div className="container font-sans">
         
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-2 px-5">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-2">
           {/* Item 1 - Horizontal grande */}
           <a href={ensaios[0].rota}
             className="md:col-span-8 md:row-span-2 relative overflow-hidden cursor-pointer group"

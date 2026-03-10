@@ -1,13 +1,14 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Jost:wght@200;300;400&display=swap');
 
 
 :root {
   --branco: #fafafa;
-  --bege: #cac1b1;
-  --chumbo: #3f382e;
-  --vinho: #3e1407;
-  --fonte-titulo: "Bodoni Moda", serif;
-  --fonte-texto: "Poppins", sans-serif;
+  --bege: #f1ede5;
+  --chumbo: #504940;
+  --vinho: #572211;
+  --fonte-titulo: "Cormorant Garamond", serif;
+  --fonte-texto: "Jost", sans-serif;
 }
 
 .container {
@@ -28,7 +29,6 @@ body {
   flex-direction: column;
   width: 100%;
   height: 100vh;
-  font-family: var(--fonte-texto);
   font-weight: 100;
   background-color: var(--branco);
 }

@@ -1,7 +1,6 @@
 import { Section } from "@/components/SectionBase";
 //import { Titulo2 } from "@/components/Titulo2";
 import { useState, type SetStateAction } from "react";
-import img1 from "@/assets/img/pag-home/foto1.jpg";
 import { GrPrevious, GrNext } from "react-icons/gr";
 
 
@@ -15,21 +14,18 @@ export const Depoimentos = () => {
       name: "Ana Carolina Silva",
       role: "Noiva",
       text: "Foi uma experiência incrível! As fotos capturaram cada emoção do nosso grande dia de forma tão natural e autêntica. Revivemos cada momento através das lentes.",
-      image: img1
     },
     {
       id: 2,
       name: "Roberto Mendes",
       role: "Empresário",
       text: "Profissionalismo excepcional. As fotos corporativas ficaram impecáveis, transmitindo exatamente a imagem que queríamos para nossa marca.",
-      image: img1
     },
     {
       id: 3,
       name: "Juliana Costa",
       role: "Influenciadora",
       text: "Trabalho incrível! A atenção aos detalhes e a capacidade de capturar minha essência em cada foto foi simplesmente perfeita. Super recomendo!",
-      image: img1
     },
     {
       id: 4,
@@ -43,7 +39,6 @@ export const Depoimentos = () => {
       name: "Mariana Santos",
       role: "Gestante",
       text: "Um momento tão especial registrado com tanto carinho e delicadeza. As fotos ficaram lindas e vou guardar para sempre.",
-      image: img1
     }
   ];
 
@@ -60,43 +55,30 @@ export const Depoimentos = () => {
   };
 
   return (
-    <Section id="depoimentos" mt="sim" bgColor="bege">
-      <div className="container py-10 px-6 md:px-0 text-[var(--chumbo)]">
+    <Section id="depoimentos" mt="sim">
+      <div className="container font-sans py-10 px-6 md:px-0 text-[var(--chumbo)] bg-[var(--bege)]">
         {/* Header */}
-        <div className="flex flex-col items-center justify-center w-full mb-6 ">
-          <h2 className="text-4xl  md:text-6xl font-light mb-4">
+        <div className="flex flex-col items-center justify-center w-full mb-10">
+          <h2 className="text-4xl font-light mb-4">
             Depoimentos
           </h2>
-          <p className=" text-lg font-light">
+          <p className="font-light">
             Como cada história foi enxergada por quem esteve do outro lado da lente.
           </p>
         </div>
 
-        {/* Exibição Principal do Depoimento */}
+        {/* Exibição do Depoimento */}
         <div className="relative">
           <div className="flex flex-col md:flex-row p-5 gap-8 md:gap-15 items-center justify-center mb-10">
-            {/* Lado da Imagem */}
-            <div className="relative group md:w-[50%]">
-              <div className="absolute -inset-0 bg-gradient-to-br from-zinc-800/20 to-zinc-900/20  blur-2xl group-hover:blur-3xl transition-all duration-500 "></div>
-              <div className="relative flex items-center justify-center overflow-hidden w-full">
-                <img
-                  src={testimonials[currentIndex].image}
-                  alt={testimonials[currentIndex].name}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 aspect-auto"
-                  loading="lazy"
-                />
-              </div>
-            </div>
-
-            {/* Conteúdo Slide */}
-            <div className="space-y-5 md:w-[60%]">
+          
+            <div className="space-y-5 md:w-[80%] min-h-50">
               
-              <p className=" font-light leading-relaxed tracking-wide">
+              <p className=" font-light text-sm leading-relaxed min-h-30 tracking-wide">
                 {testimonials[currentIndex].text}
               </p>
 
-              <div className="pt-6 border-t border-[var(--chumbo)]">
-                <h4 className="text-xl font-light tracking-wide mb-2">
+              <div className=" border-[var(--chumbo)]">
+                <h4 className="font-light tracking-wide mb-2">
                   {testimonials[currentIndex].name}
                 </h4>
                 <p className="text-zinc-500 tracking-wider uppercase text-sm">

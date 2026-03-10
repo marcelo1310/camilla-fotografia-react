@@ -1,4 +1,4 @@
-import { HeroServices, History } from "@/services-sections";
+import { HeroServices} from "@/services-sections";
 import { Galeria } from "@/services-sections/GaleriaServices";
 //import { useEffect, useState } from "react";
 //import { pegarFotosEnsaio } from "@/services/imagens";
@@ -50,14 +50,12 @@ export const Casamento = ({ nomeEnsaio }: any) => {
   */
 
   return (
-    <main className="flex flex-col bg-[var(--branco)]">
+    <main className="flex flex-col bg-[var(--branco)] font-sans">
       <HeroServices
         img={img}
         titulo="Casamento"
-        subtitulo="Quero Registrar Seu Grande dia"
-        texto="Cada casamento é único, e acredito que suas memórias merecem ser registradas com atenção, sensibilidade e profissionalismo. Ao me escolher, você tem a garantia de um olhar atento, imagens de alta qualidade e dedicação total para transformar seu dia em lembranças eternas."
+        texto="Cada casamento é único, e acredito que suas memórias merecem ser registradas com atenção, sensibilidade e profissionalismo."
       />
-      <History />
       <Galeria imagens={imge} />
       <Depoimentos />
     </main>

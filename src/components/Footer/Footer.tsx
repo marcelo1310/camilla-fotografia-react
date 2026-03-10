@@ -11,7 +11,7 @@ const imgSigame = [img1, img2, img3, img4, img5, img1];
 
 export const Footer = () => {
   return (
-    <footer className="flex w-full items-center justify-center">
+    <footer className="flex w-full items-center justify-center font-sans">
       <div className="container flex flex-col items-center justify-center w-full text-[var(--chumbo)] mb-15">
         <div className="flex flex-col w-full text-center h-50 justify-center gap-2">
           <Titulo2 cor="escuro">Siga-me nas redes sociais</Titulo2>

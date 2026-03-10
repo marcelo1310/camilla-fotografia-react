@@ -42,7 +42,7 @@ export const Contato = () => {
 
   return (
     <Section id="contato">
-      <div className="container mb-15 gap-10">
+      <div className="container font-sans mb-15 gap-10">
         {/* Título */}
         <div className=" flex flex-col text-center gap-6 mb-20">
           <Titulo2>Estou aqui para ouvir o que você precisa.</Titulo2>
